@@ -1,0 +1,50 @@
+:root{
+    --blue:#1b72e8;
+    --dark-blue:#11283e;
+    --gray:#e8e8e8;
+
+    --height-navbar:8vh;
+}
+
+main{
+    height: 100vh;
+    border: 1px solid red;
+}
+
+/* [class*="col"]{
+    border:1px dashed blue ;
+} */
+
+.bg-darkblue{
+    background-color: var(--dark-blue);
+}
+.bg-blue{
+    background-color: var(--blue);
+}
+.bg-gray{
+    background-color: var(--gary);
+}
+
+.bg-sidebar{
+    background-image: url("../img/sidebar-bg.png");
+    background-color: var(--dark-blue);
+}
+
+.navbar-brand > .logo-small{
+    width: 50px;
+}
+header > nav{
+    height: var(--height-navbar);
+}
+
+main{
+    height: calc(100vh - (var(--height-navbar)));
+}
+
+.side-item span{
+    font-size: 15px;
+}
+
+.sidebar-small{
+    max-width: 5vh;
+}

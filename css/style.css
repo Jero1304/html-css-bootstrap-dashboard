@@ -25,10 +25,7 @@ main{
     background-color: var(--gary);
 }
 
-.bg-sidebar{
-    background-image: url("../img/sidebar-bg.png");
-    background-color: var(--dark-blue);
-}
+
 
 .navbar-brand > .logo-small{
     width: 50px;
@@ -38,12 +35,36 @@ header > nav{
 }
 
 main{
+height: calc(100vh - (var(--height-navbar)));
+}
+
+.bg-sidebar{
+    background-image: url("../img/sidebar-bg.png");
+    background-color: var(--dark-blue);
+}
+
+.sidebar-main{
     height: calc(100vh - (var(--height-navbar)));
 }
 
-.side-item span{
-    font-size: 15px;
+.sidebar-w{
+    width: 16vh;
 }
+.sidebar-w a{
+    display: flex;
+    align-items: center;
+
+}
+
+.sidebar-w-small{
+    width: 8vh;
+}
+.sidebar-w-small a{
+    display: flex;
+    justify-content: center;
+}
+
+
 
 .sidebar-small{
     max-width: 5vh;
